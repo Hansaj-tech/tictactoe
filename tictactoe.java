@@ -50,6 +50,7 @@ public class TicTacToe {
             row = scanner.nextInt() - 1;
             col = scanner.nextInt() - 1;
             if (row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == ' ') {
+                System.out.println("This move is valid. And we are breaking");
                 break;
             } else {
                 System.out.println("This move is not valid. Try again.");
